@@ -39,7 +39,7 @@ module.exports = {
 
         if (user) {
             try {
-                // Insérez le nouvel avertissement dans la table SQLite
+                
                 const insertQuery = 'INSERT INTO warns (guild_id, user_id, moderator_id, reason, timestamp) VALUES (?, ?, ?, ?, ?)';
                 const values = [interaction.guild.id, user.id, interaction.user.id, reason, Date.now()];
 
